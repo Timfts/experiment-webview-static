@@ -2,15 +2,54 @@
 
 ---
 
-<html lang="en">
+<html lang="pt-br">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Stellar Spiral</title>
+		<style>
+			body {
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+				min-height: 100vh;
+				padding: 40px;
+				margin: 0;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+
+			h1 {
+				color: white;
+				font-size: 3rem;
+				margin-bottom: 2rem;
+				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+			}
+
+			.link {
+				display: inline-block;
+				padding: 16px 32px;
+				background: white;
+				color: #667eea;
+				text-decoration: none;
+				border-radius: 50px;
+				font-weight: bold;
+				font-size: 1.2rem;
+				box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+			}
+
+			.link:hover {
+				transform: translateY(-4px);
+				box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+			}
+		</style>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<h1>Stellar Spiral</h1>
+		<a href="/pokemons" class="link">🐾 Ver Pokédex</a>
 	</body>
 </html>
